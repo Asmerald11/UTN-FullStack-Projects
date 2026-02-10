@@ -1,0 +1,344 @@
+/* Header style */
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+nav{
+    background-image: url(https://i2.wp.com/pixelstalk.net/wp-content/uploads/2016/08/Sky-Scenery-1920x1080-Wallpaper.jpg);
+    background-position: bottom;
+    height: 80px;
+    width: 100%;
+
+}
+
+
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: cornsilk;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 5px;
+}
+
+a.activo,nav ul li a:hover{
+    background: blue;
+    transition: .5s;
+}
+
+.botoncheck{
+    font-size: 30px;
+    color: cornsilk;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+.Logo{
+    font-size: 35px;
+    line-height: 70px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+.Logo a{
+    color: #dcb2c5;
+}
+
+@media (max-width: 952px){
+    label.Logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    
+}
+
+@media (max-width: 985px){
+    .botoncheck{
+        display: block;
+    }
+    .cabecera{
+        overflow: hidden;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: green;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background: none;
+        color: blue;
+    }
+    #check:checked ~ .cabecera{
+    left: 0;
+    }
+    label.Logo{
+        font-size: 25px;
+    }
+}
+
+/* Index style */
+
+.cuerpo{
+    background: #ECE2D0;
+}
+
+.Kaki {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 80%;
+    text-align: center;
+    margin:0 auto;
+}
+
+#imagen {
+    flex: auto;
+    width: 50%;
+    height: auto;
+}
+
+#texto {
+    flex: auto;
+    width: 50%;
+    margin-top: 2rem;
+}
+
+.titulo {
+    color: #232f71;
+}
+
+.parrafo {
+    color: #7A7AC2;
+}
+
+.Kakires{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    width: 80%;
+    text-align: center;
+    margin:0 auto;
+    display: none;
+}
+
+
+@media (max-width:979px){
+    .Kaki{
+        display: none;
+    }
+    .Kakires{
+        padding-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        overflow: hidden;
+    }
+    #imagen{
+        width: 100%;
+    }
+    #texto{
+        width: 100%;
+    }
+}
+
+/* Acerca de mi style */
+
+.galeria {
+    display: flex;
+    justify-content: space-around;
+}
+
+.iacerca {
+    float: left;
+    margin: 2rem;
+}
+
+.tacerca {
+    text-align: justify;
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+/* Footer style */
+
+.coki {
+    width: auto;
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+footer{
+    display: flex;
+    flex-flow: row wrap;
+    padding: 3.125rem;
+    color: white;
+    background-image: url(https://i2.wp.com/pixelstalk.net/wp-content/uploads/2016/08/Sky-Scenery-1920x1080-Wallpaper.jpg);
+    background-repeat: round;
+    margin-top: 4rem;
+}
+
+.footer > *{
+    flex: 1 100%;
+}
+
+.footer-left{
+    margin-right: 1.25em;
+    margin-bottom: 2em;
+}
+
+.footer-left img{
+    width: 50%;
+}
+
+h2{
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.footer ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer li{
+    line-height: 2em;
+}
+
+.footer a{
+    text-decoration: none;
+}
+
+.footer-right{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.footer-right > *{
+    flex: 1 50%;
+    margin-right: 1.25em;
+}
+
+.box a{
+    color: #DCB2C5;
+}
+
+.footer-bottom{
+    text-align: center;
+    color: #D893AE;
+}
+
+.footer-left p{
+    padding-right: 20%;
+    color: #DCB2C5;
+}
+
+.socials a{
+    background: #DCB2C5;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.socials a i{
+    color: #D893AE;
+    padding: 10px 8px;
+    font-size: 25px;
+}
+
+@media screen and (min-width: 600px){
+    .footer-right > *{
+        flex: 1;
+    }
+    .footer-left{
+        flex: 1 0px;
+    }
+    .footer-right{
+        flex: 2 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer{
+        padding: 15px;
+    }
+    main{
+        font-size: 55px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
